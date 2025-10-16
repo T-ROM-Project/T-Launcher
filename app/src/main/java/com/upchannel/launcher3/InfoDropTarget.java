@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -26,7 +26,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 public class InfoDropTarget extends ButtonDropTarget {
 

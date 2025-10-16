@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.compat;
+package com.p3.trom.launcher.compat;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.UserHandle;
 
-import com.upchannel.launcher3.Utilities;
+import com.p3.trom.launcher.Utilities;
 
 public class UserHandleCompat {
     private UserHandle mUser;

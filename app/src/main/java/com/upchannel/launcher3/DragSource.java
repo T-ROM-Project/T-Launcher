@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.view.View;
 
-import com.upchannel.launcher3.DropTarget.DragObject;
+import com.p3.trom.launcher.DropTarget.DragObject;
 
 /**
  * Interface defining an object that can originate a drag.

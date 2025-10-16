@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.LayoutTransition;
 import android.annotation.TargetApi;
@@ -1072,8 +1072,8 @@ public class WallpaperPickerActivity extends WallpaperCropActivity {
 
     public Pair<ApplicationInfo, Integer> getWallpaperArrayResourceId() {
         // Context.getPackageName() may return the "original" package name,
-        // com.upchannel.launcher3; Resources needs the real package name,
-        // com.upchannel.launcher3. So we ask Resources for what it thinks the
+        // com.p3.trom.launcher; Resources needs the real package name,
+        // com.p3.trom.launcher. So we ask Resources for what it thinks the
         // package name should be.
         final String packageName = getResources().getResourcePackageName(R.array.wallpapers);
         try {

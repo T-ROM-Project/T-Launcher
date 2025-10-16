@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.compat;
+package com.p3.trom.launcher.compat;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
 
-import com.upchannel.launcher3.Utilities;
+import com.p3.trom.launcher.Utilities;
 
 import java.util.List;
 

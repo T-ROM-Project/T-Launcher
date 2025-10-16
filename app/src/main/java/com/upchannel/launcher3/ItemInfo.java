@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -22,8 +22,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.util.Log;
 
-import com.upchannel.launcher3.compat.UserHandleCompat;
-import com.upchannel.launcher3.compat.UserManagerCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserManagerCompat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

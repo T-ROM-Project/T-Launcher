@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.app.ActivityManager;
 import android.app.Service;
@@ -29,7 +29,7 @@ import java.util.List;
 
 public class MemoryTracker extends Service {
     public static final String TAG = MemoryTracker.class.getSimpleName();
-    public static final String ACTION_START_TRACKING = "com.upchannel.launcher3.action.START_TRACKING";
+    public static final String ACTION_START_TRACKING = "com.p3.trom.launcher.action.START_TRACKING";
 
     private static final long UPDATE_RATE = 5000;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetHostView;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.RemoteViews;
 
-import com.upchannel.launcher3.DragLayer.TouchCompleteListener;
+import com.p3.trom.launcher.DragLayer.TouchCompleteListener;
 
 /**
  * {@inheritDoc}

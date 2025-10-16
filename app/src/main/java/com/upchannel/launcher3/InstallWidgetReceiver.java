@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.ClipData;
@@ -40,18 +40,18 @@ import java.util.List;
  */
 public class InstallWidgetReceiver {
     public static final String ACTION_INSTALL_WIDGET =
-            "com.upchannel.launcher3.action.INSTALL_WIDGET";
+            "com.p3.trom.launcher.action.INSTALL_WIDGET";
     public static final String ACTION_SUPPORTS_CLIPDATA_MIMETYPE =
-            "com.upchannel.launcher3.action.SUPPORTS_CLIPDATA_MIMETYPE";
+            "com.p3.trom.launcher.action.SUPPORTS_CLIPDATA_MIMETYPE";
 
     // Currently not exposed.  Put into Intent when we want to make it public.
     // TEMP: Should we call this "EXTRA_APPWIDGET_PROVIDER"?
     public static final String EXTRA_APPWIDGET_COMPONENT =
-        "com.upchannel.launcher3.extra.widget.COMPONENT";
+        "com.p3.trom.launcher.extra.widget.COMPONENT";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA_MIME_TYPE =
-        "com.upchannel.launcher3.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
+        "com.p3.trom.launcher.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA =
-        "com.upchannel.launcher3.extra.widget.CONFIGURATION_DATA";
+        "com.p3.trom.launcher.extra.widget.CONFIGURATION_DATA";
 
     /**
      * A simple data class that contains per-item information that the adapter below can reference.

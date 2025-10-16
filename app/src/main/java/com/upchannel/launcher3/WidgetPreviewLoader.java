@@ -1,4 +1,4 @@
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
@@ -28,7 +28,7 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.upchannel.launcher3.compat.AppWidgetManagerCompat;
+import com.p3.trom.launcher.compat.AppWidgetManagerCompat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

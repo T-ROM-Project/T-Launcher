@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.app.SearchManager;
 import android.content.ComponentName;
@@ -28,15 +28,15 @@ import android.database.ContentObserver;
 import android.os.Handler;
 import android.util.Log;
 
-import com.upchannel.launcher3.compat.LauncherAppsCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat.PackageInstallInfo;
+import com.p3.trom.launcher.compat.LauncherAppsCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat.PackageInstallInfo;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 public class LauncherAppState implements DeviceProfile.DeviceProfileCallbacks {
     private static final String TAG = "LauncherAppState";
-    private static final String SHARED_PREFERENCES_KEY = "com.upchannel.launcher3.prefs";
+    private static final String SHARED_PREFERENCES_KEY = "com.p3.trom.launcher.prefs";
 
     private static final boolean DEBUG = false;
 

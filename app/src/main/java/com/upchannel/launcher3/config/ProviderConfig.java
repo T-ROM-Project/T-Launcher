@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.config;
+package com.p3.trom.launcher.config;
 
 public class ProviderConfig {
 
-    public static final String AUTHORITY = "com.upchannel.launcher3.settings";
+    public static final String AUTHORITY = "com.p3.trom.launcher.settings";
 }

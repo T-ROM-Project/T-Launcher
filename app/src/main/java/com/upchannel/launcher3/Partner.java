@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -35,7 +35,7 @@ public class Partner {
 
     /** Marker action used to discover partner */
     private static final String
-            ACTION_PARTNER_CUSTOMIZATION = "com.upchannel.launcher3.action.PARTNER_CUSTOMIZATION";
+            ACTION_PARTNER_CUSTOMIZATION = "com.p3.trom.launcher.action.PARTNER_CUSTOMIZATION";
 
     public static final String RES_FOLDER = "partner_folder";
     public static final String RES_WALLPAPERS = "partner_wallpapers";

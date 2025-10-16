@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -45,7 +45,7 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LayoutAnimationController;
 
-import com.upchannel.launcher3.FolderIcon.FolderRingAnimator;
+import com.p3.trom.launcher.FolderIcon.FolderRingAnimator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

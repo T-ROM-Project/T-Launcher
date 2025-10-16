@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.compat;
+package com.p3.trom.launcher.compat;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -37,8 +37,8 @@ import android.os.UserManager;
 import android.view.View;
 import android.widget.Toast;
 
-import com.upchannel.launcher3.IconCache;
-import com.upchannel.launcher3.R;
+import com.p3.trom.launcher.IconCache;
+import com.p3.trom.launcher.R;
 
 import java.util.ArrayList;
 import java.util.List;

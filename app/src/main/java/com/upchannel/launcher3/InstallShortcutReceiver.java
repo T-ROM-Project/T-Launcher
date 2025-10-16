@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -29,7 +29,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 import org.json.JSONObject;
 import org.json.JSONStringer;
@@ -64,7 +64,7 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
 
     // A mime-type representing shortcut data
     public static final String SHORTCUT_MIMETYPE =
-            "com.upchannel.launcher3/shortcut";
+            "com.p3.trom.launcher/shortcut";
 
     private static Object sLock = new Object();
 

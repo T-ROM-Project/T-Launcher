@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.compat;
+package com.p3.trom.launcher.compat;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.upchannel.launcher3.LauncherAppState;
+import com.p3.trom.launcher.LauncherAppState;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -40,7 +40,7 @@ public class PackageInstallerCompatV16 extends PackageInstallerCompat {
     private static final String KEY_STATE = "state";
 
     private static final String PREFS =
-            "com.upchannel.launcher3.compat.PackageInstallerCompatV16.queue";
+            "com.p3.trom.launcher.compat.PackageInstallerCompatV16.queue";
 
     protected final SharedPreferences mPrefs;
 

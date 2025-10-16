@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.upchannel.launcher3.AppsCustomizeTabHost
+<com.p3.trom.launcher.AppsCustomizeTabHost
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:clipChildren="false">
@@ -43,7 +43,7 @@
                     android:visibility="invisible"
                     android:clipToPadding="false" />
             </FrameLayout>
-            <com.upchannel.launcher3.AppsCustomizePagedView
+            <com.p3.trom.launcher.AppsCustomizePagedView
                 android:id="@+id/apps_customize_pane_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,4 +59,4 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
     </LinearLayout>
-</com.upchannel.launcher3.AppsCustomizeTabHost>
+</com.p3.trom.launcher.AppsCustomizeTabHost>

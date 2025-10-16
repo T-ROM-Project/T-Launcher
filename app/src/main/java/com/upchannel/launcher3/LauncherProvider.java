@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.app.SearchManager;
 import android.appwidget.AppWidgetHost;
@@ -52,11 +52,11 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
 
-import com.upchannel.launcher3.AutoInstallsLayout.LayoutParserCallback;
-import com.upchannel.launcher3.LauncherSettings.Favorites;
-import com.upchannel.launcher3.compat.UserHandleCompat;
-import com.upchannel.launcher3.compat.UserManagerCompat;
-import com.upchannel.launcher3.config.ProviderConfig;
+import com.p3.trom.launcher.AutoInstallsLayout.LayoutParserCallback;
+import com.p3.trom.launcher.LauncherSettings.Favorites;
+import com.p3.trom.launcher.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserManagerCompat;
+import com.p3.trom.launcher.config.ProviderConfig;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

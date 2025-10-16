@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetHostView;
 import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 /**
  * Represents a widget (either instantiated or about to be) in the Launcher.

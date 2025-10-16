@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import com.google.protobuf.nano.InvalidProtocolBufferNanoException;
 import com.google.protobuf.nano.MessageNano;
 
-import com.upchannel.launcher3.LauncherSettings.Favorites;
-import com.upchannel.launcher3.LauncherSettings.WorkspaceScreens;
-import com.upchannel.launcher3.backup.BackupProtos;
-import com.upchannel.launcher3.backup.BackupProtos.CheckedMessage;
-import com.upchannel.launcher3.backup.BackupProtos.Favorite;
-import com.upchannel.launcher3.backup.BackupProtos.Journal;
-import com.upchannel.launcher3.backup.BackupProtos.Key;
-import com.upchannel.launcher3.backup.BackupProtos.Resource;
-import com.upchannel.launcher3.backup.BackupProtos.Screen;
-import com.upchannel.launcher3.backup.BackupProtos.Widget;
-import com.upchannel.launcher3.compat.UserManagerCompat;
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.LauncherSettings.Favorites;
+import com.p3.trom.launcher.LauncherSettings.WorkspaceScreens;
+import com.p3.trom.launcher.backup.BackupProtos;
+import com.p3.trom.launcher.backup.BackupProtos.CheckedMessage;
+import com.p3.trom.launcher.backup.BackupProtos.Favorite;
+import com.p3.trom.launcher.backup.BackupProtos.Journal;
+import com.p3.trom.launcher.backup.BackupProtos.Key;
+import com.p3.trom.launcher.backup.BackupProtos.Resource;
+import com.p3.trom.launcher.backup.BackupProtos.Screen;
+import com.p3.trom.launcher.backup.BackupProtos.Widget;
+import com.p3.trom.launcher.compat.UserManagerCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 import android.app.backup.BackupDataInputStream;
 import android.app.backup.BackupDataOutput;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
@@ -39,7 +39,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 public class DeleteDropTarget extends ButtonDropTarget {
     private static int DELETE_ANIMATION_DURATION = 285;

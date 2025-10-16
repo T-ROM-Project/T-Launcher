@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.Context;
@@ -30,7 +30,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.upchannel.launcher3.compat.AppWidgetManagerCompat;
+import com.p3.trom.launcher.compat.AppWidgetManagerCompat;
 
 /**
  * The linear layout used strictly for the widget/wallpaper tab of the customization tray

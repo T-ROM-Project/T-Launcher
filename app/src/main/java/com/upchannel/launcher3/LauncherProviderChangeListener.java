@@ -1,4 +1,4 @@
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 /**
  * This class is a listener for {@link LauncherProvider} changes. It gets notified in the

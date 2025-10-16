@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3.compat;
+package com.p3.trom.launcher.compat;
 
 import android.content.Context;
 import android.content.pm.PackageInstaller;
@@ -23,8 +23,8 @@ import android.content.pm.PackageInstaller.SessionInfo;
 import android.util.Log;
 import android.util.SparseArray;
 
-import com.upchannel.launcher3.IconCache;
-import com.upchannel.launcher3.LauncherAppState;
+import com.p3.trom.launcher.IconCache;
+import com.p3.trom.launcher.LauncherAppState;
 
 import java.util.ArrayList;
 import java.util.HashSet;

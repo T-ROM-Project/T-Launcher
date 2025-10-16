@@ -13,9 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.upchannel.launcher3.PageIndicator
+<com.p3.trom.launcher.PageIndicator
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:animateLayoutChanges="true"
     launcher:windowSize="@integer/config_maxNumberOfPageIndicatorsToShow">
-</com.upchannel.launcher3.PageIndicator>
+</com.p3.trom.launcher.PageIndicator>

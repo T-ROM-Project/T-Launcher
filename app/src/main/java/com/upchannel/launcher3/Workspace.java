@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -65,12 +65,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.TextView;
 
-import com.upchannel.launcher3.FolderIcon.FolderRingAnimator;
-import com.upchannel.launcher3.Launcher.CustomContentCallbacks;
-import com.upchannel.launcher3.LauncherSettings.Favorites;
-import com.upchannel.launcher3.compat.PackageInstallerCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat.PackageInstallInfo;
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.FolderIcon.FolderRingAnimator;
+import com.p3.trom.launcher.Launcher.CustomContentCallbacks;
+import com.p3.trom.launcher.LauncherSettings.Favorites;
+import com.p3.trom.launcher.compat.PackageInstallerCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat.PackageInstallInfo;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 import java.util.ArrayList;
 import java.util.HashMap;

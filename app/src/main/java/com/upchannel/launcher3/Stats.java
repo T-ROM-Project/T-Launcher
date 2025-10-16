@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -31,7 +31,7 @@ public class Stats {
 
     private static final boolean LOCAL_LAUNCH_LOG = true;
 
-    public static final String ACTION_LAUNCH = "com.upchannel.launcher3.action.LAUNCH";
+    public static final String ACTION_LAUNCH = "com.p3.trom.launcher.action.LAUNCH";
     public static final String EXTRA_INTENT = "intent";
     public static final String EXTRA_CONTAINER = "container";
     public static final String EXTRA_SCREEN = "screen";

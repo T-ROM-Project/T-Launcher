@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.app.SearchManager;
 import android.appwidget.AppWidgetManager;
@@ -51,13 +51,13 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
 
-import com.upchannel.launcher3.compat.AppWidgetManagerCompat;
-import com.upchannel.launcher3.compat.LauncherActivityInfoCompat;
-import com.upchannel.launcher3.compat.LauncherAppsCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat.PackageInstallInfo;
-import com.upchannel.launcher3.compat.UserHandleCompat;
-import com.upchannel.launcher3.compat.UserManagerCompat;
+import com.p3.trom.launcher.compat.AppWidgetManagerCompat;
+import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
+import com.p3.trom.launcher.compat.LauncherAppsCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat.PackageInstallInfo;
+import com.p3.trom.launcher.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserManagerCompat;
 
 import java.lang.ref.WeakReference;
 import java.net.URISyntaxException;

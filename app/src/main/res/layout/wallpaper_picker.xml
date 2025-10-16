@@ -18,12 +18,12 @@
 */
 -->
 
-<com.upchannel.launcher3.WallpaperRootView
+<com.p3.trom.launcher.WallpaperRootView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/wallpaper_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.upchannel.launcher3.CropView
+    <com.p3.trom.launcher.CropView
         android:id="@+id/cropView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -74,4 +74,4 @@
             android:layout_height="2dp"
             android:background="@drawable/tile_shadow_bottom" />
     </LinearLayout>
-</com.upchannel.launcher3.WallpaperRootView>
+</com.p3.trom.launcher.WallpaperRootView>

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.content.ComponentName;
 import android.content.Context;
 
-import com.upchannel.launcher3.compat.LauncherActivityInfoCompat;
-import com.upchannel.launcher3.compat.LauncherAppsCompat;
-import com.upchannel.launcher3.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
+import com.p3.trom.launcher.compat.LauncherAppsCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
 
 import java.util.ArrayList;
 import java.util.List;

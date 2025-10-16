@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -100,15 +100,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.upchannel.launcher3.DropTarget.DragObject;
-import com.upchannel.launcher3.PagedView.PageSwitchListener;
-import com.upchannel.launcher3.compat.AppWidgetManagerCompat;
-import com.upchannel.launcher3.compat.LauncherActivityInfoCompat;
-import com.upchannel.launcher3.compat.LauncherAppsCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat;
-import com.upchannel.launcher3.compat.PackageInstallerCompat.PackageInstallInfo;
-import com.upchannel.launcher3.compat.UserHandleCompat;
-import com.upchannel.launcher3.compat.UserManagerCompat;
+import com.p3.trom.launcher.DropTarget.DragObject;
+import com.p3.trom.launcher.PagedView.PageSwitchListener;
+import com.p3.trom.launcher.compat.AppWidgetManagerCompat;
+import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
+import com.p3.trom.launcher.compat.LauncherAppsCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat;
+import com.p3.trom.launcher.compat.PackageInstallerCompat.PackageInstallInfo;
+import com.p3.trom.launcher.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserManagerCompat;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -175,7 +175,7 @@ public class Launcher extends Activity
 
     // The Intent extra that defines whether to ignore the launch animation
     static final String INTENT_EXTRA_IGNORE_LAUNCH_ANIMATION =
-            "com.upchannel.launcher3.intent.extra.shortcut.INGORE_LAUNCH_ANIMATION";
+            "com.p3.trom.launcher.intent.extra.shortcut.INGORE_LAUNCH_ANIMATION";
 
     // Type: int
     private static final String RUNTIME_STATE_CURRENT_SCREEN = "launcher.current_screen";
@@ -209,7 +209,7 @@ public class Launcher extends Activity
 
     static final String FIRST_LOAD_COMPLETE = "launcher.first_load_complete";
     static final String ACTION_FIRST_LOAD_COMPLETE =
-            "com.upchannel.launcher3.action.FIRST_LOAD_COMPLETE";
+            "com.p3.trom.launcher.action.FIRST_LOAD_COMPLETE";
 
     private static final String TOOLBAR_ICON_METADATA_NAME = "com.android.launcher.toolbar_icon";
     private static final String TOOLBAR_SEARCH_ICON_METADATA_NAME =
@@ -5224,6 +5224,6 @@ interface LauncherTransitionable {
 }
 
 interface DebugIntents {
-    static final String DELETE_DATABASE = "com.upchannel.launcher3.action.DELETE_DATABASE";
-    static final String MIGRATE_DATABASE = "com.upchannel.launcher3.action.MIGRATE_DATABASE";
+    static final String DELETE_DATABASE = "com.p3.trom.launcher.action.DELETE_DATABASE";
+    static final String MIGRATE_DATABASE = "com.p3.trom.launcher.action.MIGRATE_DATABASE";
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -41,8 +41,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.upchannel.launcher3.DropTarget.DragObject;
-import com.upchannel.launcher3.FolderInfo.FolderListener;
+import com.p3.trom.launcher.DropTarget.DragObject;
+import com.p3.trom.launcher.FolderInfo.FolderListener;
 
 import java.util.ArrayList;
 

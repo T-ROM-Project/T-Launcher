@@ -1,4 +1,4 @@
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.appwidget.AppWidgetHost;
 import android.appwidget.AppWidgetManager;
@@ -12,7 +12,7 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.upchannel.launcher3.LauncherSettings.Favorites;
+import com.p3.trom.launcher.LauncherSettings.Favorites;
 
 import java.util.ArrayList;
 import java.util.List;

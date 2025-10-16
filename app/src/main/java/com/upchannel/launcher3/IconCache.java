@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.upchannel.launcher3;
+package com.p3.trom.launcher;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;
@@ -34,10 +34,10 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.upchannel.launcher3.compat.LauncherActivityInfoCompat;
-import com.upchannel.launcher3.compat.LauncherAppsCompat;
-import com.upchannel.launcher3.compat.UserHandleCompat;
-import com.upchannel.launcher3.compat.UserManagerCompat;
+import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
+import com.p3.trom.launcher.compat.LauncherAppsCompat;
+import com.p3.trom.launcher.compat.UserHandleCompat;
+import com.p3.trom.launcher.compat.UserManagerCompat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
