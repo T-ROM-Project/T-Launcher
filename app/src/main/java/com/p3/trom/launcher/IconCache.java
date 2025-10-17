@@ -242,7 +242,7 @@ public class IconCache {
      * Fill in "application" with the icon and label for "info."
      */
     public void getTitleAndIcon(AppInfo application, LauncherActivityInfoCompat info,
-            HashMap<Object, CharSequence> labelCache) {
+                                HashMap<Object, CharSequence> labelCache) {
         synchronized (mCache) {
             CacheEntry entry = cacheLocked(application.componentName, info, labelCache,
                     info.getUser(), false);
@@ -280,7 +280,7 @@ public class IconCache {
      * Fill in "shortcutInfo" with the icon and label for "info."
      */
     public void getTitleAndIcon(ShortcutInfo shortcutInfo, Intent intent, UserHandleCompat user,
-            boolean usePkgIcon) {
+                                boolean usePkgIcon) {
         synchronized (mCache) {
             ComponentName component = intent.getComponent();
             // null info means not installed, but if we have a component from the intent then
@@ -310,7 +310,7 @@ public class IconCache {
     }
 
     public Bitmap getIcon(ComponentName component, LauncherActivityInfoCompat info,
-            HashMap<Object, CharSequence> labelCache) {
+                          HashMap<Object, CharSequence> labelCache) {
         synchronized (mCache) {
             if (info == null || component == null) {
                 return null;
@@ -326,7 +326,7 @@ public class IconCache {
     }
 
     private CacheEntry cacheLocked(ComponentName componentName, LauncherActivityInfoCompat info,
-            HashMap<Object, CharSequence> labelCache, UserHandleCompat user, boolean usePackageIcon) {
+                                   HashMap<Object, CharSequence> labelCache, UserHandleCompat user, boolean usePackageIcon) {
         CacheKey cacheKey = new CacheKey(componentName, user);
         CacheEntry entry = mCache.get(cacheKey);
         if (entry == null) {
@@ -382,7 +382,7 @@ public class IconCache {
      * when the cache is flushed.
      */
     public void cachePackageInstallInfo(String packageName, UserHandleCompat user,
-            Bitmap icon, CharSequence title) {
+                                        Bitmap icon, CharSequence title) {
         remove(packageName, user);
 
         CacheEntry entry = getEntryForPackage(packageName, user);
@@ -445,7 +445,7 @@ public class IconCache {
      * @param dpi the native density of the icon
      */
     public static void preloadIcon(Context context, ComponentName componentName, Bitmap icon,
-            int dpi) {
+                                   int dpi) {
         // TODO rescale to the correct native DPI
         try {
             PackageManager packageManager = context.getPackageManager();

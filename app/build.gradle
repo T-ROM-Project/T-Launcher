@@ -8,6 +8,9 @@ android {
         applicationId "com.p3.trom.launcher"
         minSdkVersion 21
         targetSdkVersion 21
+        versionCode 1
+        // Defines a user-friendly version name for your app.
+        versionName "1.0"
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_7
             targetCompatibility JavaVersion.VERSION_1_7

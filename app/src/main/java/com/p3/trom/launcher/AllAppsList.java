@@ -18,6 +18,7 @@ package com.p3.trom.launcher;
 
 import android.content.ComponentName;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
 import com.p3.trom.launcher.compat.LauncherAppsCompat;
@@ -63,12 +64,85 @@ class AllAppsList {
      * If the app is already in the list, doesn't add it.
      */
     public void add(AppInfo info) {
+        // Launcher selbst ausblenden
+        if ("com.p3.trom.launcher".equals(info.componentName.getPackageName())) {
+            return;
+        }
+
+        // App-spezifische Icons
+        Drawable customIcon = null;
+        String pkg = info.componentName.getPackageName();
+
+        switch (pkg) {
+            case "com.android.settings":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_settings);
+                break;
+            case "com.mediatek.blemanager":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_bt);
+                break;
+            case "com.android.deskclock":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_clock);
+                break;
+            case "com.mediatek.filemanager":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_file);
+                break;
+            case "com.android.calculator2":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_calculator);
+                break;
+            case "com.android.providers.downloads.ui":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_download);
+                break;
+            case "com.android.calendar":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_calendar);
+                break;
+            case "com.android.gallery3d":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_photo);
+                break;
+            case "com.android.music":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_music);
+                break;
+            case "com.android.soundrecorder":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_recording);
+                break;
+            case "com.kingroot.kinguser":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_root);
+                break;
+            case "com.android.contacts":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_contacts);
+                break;
+            case "com.android.dialer":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_dialer);
+                break;
+            case "com.android.mms":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_mms);
+                break;
+            case "com.mediatek.fmradio":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_fm);
+                break;
+            case "com.android.chrome":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_browser);
+                break;
+            case "com.p3.trom.MicroGSetup":
+                customIcon = LauncherAppState.getInstance().getContext().getResources().getDrawable(R.drawable.app_icon_setup);
+                break;
+        }
+
+        // Icon in Bitmap umwandeln (wenn vorhanden)
+        if (customIcon != null) {
+            info.iconBitmap = Utilities.createIconBitmap(customIcon, LauncherAppState.getInstance().getContext());
+        }
+
+        // Filter prüfen
         if (mAppFilter != null && !mAppFilter.shouldShowApp(info.componentName)) {
             return;
         }
+
+        // Doppelte Apps vermeiden
         if (findActivity(data, info.componentName, info.user)) {
             return;
         }
+
+        // Hinzufügen
         data.add(info);
         added.add(info);
     }
