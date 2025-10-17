@@ -33,6 +33,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.Log;
+import android.graphics.drawable.Drawable;
+
 
 import com.p3.trom.launcher.compat.LauncherActivityInfoCompat;
 import com.p3.trom.launcher.compat.LauncherAppsCompat;
@@ -54,6 +56,47 @@ import java.util.Map.Entry;
  * Cache of application icons.  Icons can be made from any thread.
  */
 public class IconCache {
+    private Drawable getCustomIcon(String packageName) {
+        try {
+            Resources res = mContext.getResources();
+            switch (packageName) {
+                case "com.android.settings":
+                    return res.getDrawable(R.drawable.app_icon_settings);
+                case "com.android.deskclock":
+                    return res.getDrawable(R.drawable.app_icon_clock);
+                case "com.android.calendar":
+                    return res.getDrawable(R.drawable.app_icon_calendar);
+                case "com.android.gallery3d":
+                    return res.getDrawable(R.drawable.app_icon_photo);
+                case "com.android.music":
+                    return res.getDrawable(R.drawable.app_icon_music);
+                case "com.android.soundrecorder":
+                    return res.getDrawable(R.drawable.app_icon_recording);
+                case "com.android.contacts":
+                    return res.getDrawable(R.drawable.app_icon_contacts);
+                case "com.android.dialer":
+                    return res.getDrawable(R.drawable.app_icon_dialer);
+                case "com.android.mms":
+                    return res.getDrawable(R.drawable.app_icon_mms);
+                case "com.mediatek.filemanager":
+                    return res.getDrawable(R.drawable.app_icon_file);
+                case "com.android.providers.downloads.ui":
+                    return res.getDrawable(R.drawable.app_icon_download);
+                case "com.android.chrome":
+                    return res.getDrawable(R.drawable.app_icon_browser);
+                case "com.mediatek.fmradio":
+                    return res.getDrawable(R.drawable.app_icon_fm);
+                case "com.kingroot.kinguser":
+                    return res.getDrawable(R.drawable.app_icon_root);
+                case "com.p3.trom.MicroGSetup":
+                    return res.getDrawable(R.drawable.app_icon_setup);
+                default:
+                    return null;
+            }
+        } catch (Resources.NotFoundException e) {
+            return null;
+        }
+    }
 
     private static final String TAG = "Launcher.IconCache";
 
@@ -157,11 +200,16 @@ public class IconCache {
     }
 
     public Drawable getFullResIcon(ActivityInfo info) {
+        // 1️⃣ Zuerst prüfen, ob es ein benutzerdefiniertes Icon gibt
+        Drawable customIcon = getCustomIcon(info.packageName);
+        if (customIcon != null) {
+            return customIcon;
+        }
 
+        // 2️⃣ Standardverhalten (Originalcode)
         Resources resources;
         try {
-            resources = mPackageManager.getResourcesForApplication(
-                    info.applicationInfo);
+            resources = mPackageManager.getResourcesForApplication(info.applicationInfo);
         } catch (PackageManager.NameNotFoundException e) {
             resources = null;
         }
@@ -174,7 +222,6 @@ public class IconCache {
 
         return getFullResDefaultActivityIcon();
     }
-
     private Bitmap makeDefaultIcon(UserHandleCompat user) {
         Drawable unbadged = getFullResDefaultActivityIcon();
         Drawable d = mUserManager.getBadgedDrawableForUser(unbadged, user);
